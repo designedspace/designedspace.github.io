@@ -5,17 +5,117 @@
     <title>Geo404/709 Portfolio Example</title>
 
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 
     <style>
-
-    /* CSS style rules go here! */   
-
+    body {  
+        background: #222222;   
+        font-family: Oswald, sans-serif;
+    }
+    header { 
+        width: 100%;
+        min-width: 800px;
+        margin: 0 auto;
+        background: black;
+        padding: 15px 0 20px;
+        }
+    h1 { 
+        font-family: Oswald, sans-serif;
+        width: 80%;
+        font-weight: 800;
+        font-style: italic;
+        margin: 0 auto;
+        color: whitesmoke;
+    }
+    h2 { 
+        font-family: Oswald, sans-serif;
+        width: 80%;
+        margin: 0 auto;
+        font-weight:500;
+        font-style: italic;
+        color: whitesmoke;
+    }
+    h3 {
+        font-family: Oswald, sans-serif;
+        color: whitesmoke;
+    }
+    p { 
+        font-size: .9em; 
+        color: whitesmoke;
+    }
+    ul {
+        list-style-type: none; 
+        font-size: .9em; 
+        color: whitesmoke;
+        line-height: 1.6em;
+    }
+    a, a:visited {   
+        color:whitesmoke;
+    }
+    .project {
+        width: 80%;
+        min-width: 800px;
+        height: 100%;
+        margin: 35px auto;
+    }
+    .project:after{
+        content: "";
+        display: table;
+        clear: both; 
+    }
+    .project .text {
+        position: absolute;
+        width: 20%
+    }
+    .project-image {
+        width: 388px;
+        height: 240px;
+        background: whitesmoke;
+        margin-right: 20px;
+        border: 2px solid #dddddd;
+        float:left;
+    }
     </style>
     </head>
 
     <body>
-
-        <p>Hello World! I'm going to be a portfolio page.</p>
-
+        <header>
+        <h1>Eric M. Huntley</h1>
+        <h2>Cartographer, Designer, Geographer</h2>
+        </header>
+        
+        <section class="project">
+            <image src="images/symap.jpg" alt="symap" class="project-image"/>
+            <h3>A D3 Implementation of SYMAP Interpolation Algorithms and Graphic Conventions</h3>
+            <p>A D3 implementation of the overprinting technique used by early automated cartography platforms to render shaded areas on line printers. It also makes use of an in-browser interpolation function that, taking areal data as its input, generates an isopleth map. More specifically, it uses Donald Shepard's 1968 inverse distance weighting algorithm, developed for use in the SYMAP mapping platform at the Harvard Laboratory for Computer Graphics. For the curious, the paper in which Shepard first detailed his algorithm can be found <a href="docs/shepard1968.pdf" target="_blank">here</a>.</p>
+            <ul>
+                <li><a href="symap/"  target="_blank">See the map</a></li>
+                <li><a href="https://github.com/designedspace/symap" target="_blank">Source code on GitHub.</a></li>
+                <li>Data: <a href="http://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml"  target="_blank">US Census</a></li>
+            </ul>
+        </section>
+        <section class="project">
+            <image src="images/ky-unemployment.jpg" alt="ky-unemployment" class="project-image"/>
+            <h3>Unemployment in Kentucky, 2000-2013</h3>
+            <p>A chorpleth map that displays unemployment in Kentucky counties between 2000 and 2013. The map is coded in Leaflet with some D3 flourishes. The data is loaded dynamically with an AJAX request, and classifications are calculated at run-time with the client. As the user mouses over a given county, a info-graphic displaying unemployment over time is dynamically generated using D3 and displayed on axes whose range is continuously recalculated based on the input domain. The map uses an HTML5 range slider to sequence through the years and update the map.</p>
+            <ul>
+                <li><a href="ky-unemployment/"  target="_blank">See the map</a></li>
+                <li><a href="https://github.com/designedspace/geo409/tree/master/map-04" target="_blank">Source code on GitHub.</a></li>
+                <li>Data: <a href="http://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml"  target="_blank">American Community Survey</a></li>
+            </ul>
+        </section>
+        <section class="project">
+            <image src="images/power-plants.jpg" alt="power-plants" class="project-image"/>
+            <h3>Hydroelectric, Solar, and Coal Power Plants In the United States</h3>
+            <p>A proportional symbol map, coded using Leaflet, that displays all hydroelectric, solar, and coal power plants in the United States scaled by their total power output. When the user clicks a location, the map calculates the total power generated by each types of plants in a circular surrounding area and binds appropriate text to a popup that is redrawn with each user click. A double-click does the same with a more confined search area.</p>
+            <ul>
+                <li><a href="power-plants"  target="_blank">See the map</a></li>
+                <li><a href="https://github.com/designedspace/geo409/tree/master/map-03" target="_blank">Source code on GitHub.</a></li>
+                <li>Data: <a href="http://energy.gov/"  target="_blank">U.S. Department of Energy</a></li>
+            </ul>
+        </section>
+    
     </body>
     </html>
