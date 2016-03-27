@@ -26,7 +26,10 @@ permalink: /
 
             <h1>{{ site.name }}</h1>
             <h2>{{ site.subtitle }}</h2>
-            <h3>{{ site.description }}</h3>
+            
+            <div id="text">
+                <h3>{{ site.description }}</h3>
+            </div>
 
                 <ul>
                     {% if site.twitter_username %}
@@ -42,7 +45,7 @@ permalink: /
                     {% endif %}
                     
                     {% if site.academia_username %}
-                    <li><a class="fa fa-2x fa-academia" href="https://uky.academia.edu/{{ site.github_username }}"><span class="description">Academia.edu</span></a></li>
+                    <li><a class="fa fa-2x fa-academia" href="https://uky.academia.edu/{{ site.github_username }}"><span class="description">Academia</span></a></li>
                     {% endif %}
                     
                     {% if site.github_username %}

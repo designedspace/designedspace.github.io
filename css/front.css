@@ -47,6 +47,8 @@ h3 {
     padding-bottom: 40px;
     background-color: rgba(0, 0, 0, 0.0);
     text-align: center;
+    width:50%;
+    margin:auto;
 }
 
 .fa-academia::before {
@@ -91,7 +93,7 @@ a {
     display: none;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 600px) {
 ul {
     text-align: center;
 }
@@ -136,13 +138,18 @@ a:hover {
     color: white;
     text-decoration: none;
 }
+    
 .description {
-    display: inline-block;
+    display:inline-block;
     color: white;
-    font-family: Arial;
+    font-family: 'Roboto Slab', serif;
+    text-align:center;
     margin-left: 40px;
 }
 .content {
     padding-top: 60px;
+    
+    width:80%;
+    margin:auto;
 }
 }
