@@ -1,0 +1,33 @@
+# Site settings
+name: Eric M. Huntley, MUP
+subtitle: "<a class='textlink' href='https://geography.as.uky.edu/users/emhu228/' target='_blank'>PhD Student</a>, University of Kentucky Department of Geography<br><a class='textlink' href='http://newmaps.as.uky.edu/' target='_blank'>Affiliate</a>, New Mappings Collaboratory"
+description: "Landscape architecture, sea level rise, and the politics of anticipatory action.<br>Substantial site coming <strong>Summer 2016</strong>. For now, find me below."
+url: ""
+
+
+# Delete the lines you don't need
+# about 5 elements are recomended
+github_username:  ericmhuntley
+facebook_username: ericmhuntley
+twitter_username: ericmhuntley
+linkedin_username: ericmhuntley
+academia_username: ericmhuntley
+#blog_url: "/blog"
+email: ericmhuntley@uky.edu 
+#public_key_url: "https://raw.pastebin.com/LINK-TO-PUBLIC-KEY"
+
+
+avatar: yes
+#avatar_img_path: "imgs/avatar.jpg""
+# You can link to your GitHub image. That way it will get updated 
+# automatically whenever you change your GitHub profile picture
+avatar_img_path: "https://avatars0.githubusercontent.com/u/10646361"
+
+
+front_img: yes
+front_img_path: "imgs/background.jpg"
+#front_img_path: "https://external.url/image.jpg"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
