@@ -22,7 +22,7 @@ body {
     height: 180px;
     border-radius: 100%;
     border: 5px solid white;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 h1 {
     color: white;
@@ -47,7 +47,7 @@ h3 {
     padding-bottom: 40px;
     background-color: rgba(0, 0, 0, 0.0);
     text-align: center;
-    width:50%;
+    width:45%;
     margin:auto;
 }
 
@@ -94,10 +94,22 @@ a {
 }
 
 @media (max-width: 600px) {
-ul {
-    text-align: center;
+ul {    
+    list-style: none;
+    padding: 0;
+/*    text-align: center;*/
 }
 li {
+    
+    border-radius: 100%;
+    border: 2px solid white;
+    color: white;
+    margin: 8px;
+    display: inline-block;
+    list-style: none;
+    width: 65px;
+    height: 65px;
+/*
     border-radius: 0%;
     border: none;
     color: white;
@@ -108,12 +120,30 @@ li {
     text-align: center;
     height: auto;
     width: auto;
+*/
 }
 li:hover {
+    
+    color: white;
+    text-decoration: none;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    transition: 500ms;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.5);
+/*
+    
     background-color: none;
     transition: none;
+*/
 }
 a {
+    
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+/*
+    
     text-align: justify;
     border: 2px solid white;
     border-radius: 5px;
@@ -121,6 +151,7 @@ a {
     padding: 15px;
     padding-left: 30px;
     width: 70%;
+*/
 }
     
 .textlink {
@@ -140,11 +171,16 @@ a:hover {
 }
     
 .description {
+    display:none;
+/*
     display:inline-block;
     color: white;
     font-family: 'Roboto Slab', serif;
     text-align:center;
     margin-left: 40px;
+    font-size: 20px;
+    font-weight: 
+*/
 }
 .content {
     padding-top: 60px;
